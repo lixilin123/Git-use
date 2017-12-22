@@ -1,7 +1,7 @@
 # Git-use
 
 ##### 第一步，下载好git，安装好，并进行如下配置：
-		$ git config --global user.name "Your Name"
+		#### $ git config --global user.name "Your Name"
 		$ git config --global user.email "email@example.com"
 		
 ##### 第二步，检查自己电脑上是否有私钥和公钥，没有的话使用如下命令创建：
