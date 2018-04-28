@@ -1,4 +1,4 @@
-# Git-use
+# git-use
 #### 第一步，下载好git，安装好，并进行如下配置：
 		$ git config --global user.name "Your Name"
 		$ git config --global user.email "email@example.com"
