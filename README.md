@@ -9,6 +9,7 @@ $ git config --global user.email "email@example.com"
 $ ssh-keygen -t rsa -C "youremail@example.com"
 ```
 **3. 将公钥内容拷贝到Github的SSH keys中;**
+
 **4. 在本地创建一个目录并进入，然后使用如下命令拉取代码：**
 ``` bash
 git clone git@github.com:xxx/xxx.git
