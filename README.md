@@ -1,21 +1,22 @@
 # git-use
-### 1.简介
-本仓库介绍了使用git前需要做的一些事情
-### 2.流程
-1. 下载好git，安装好，并进行如下配置：
+> [中文文档](https://github.com/lixilin123/git-use/blob/master/README-zh.md)
+### 1 Introduction
+This is a github repository that describes some of the things you need to do before using git.
+### 2. Process
+1. Download git, install it, and configure it as follows:
 ``` bash
 $ git config --global user.name "Your Name"
 $ git config --global user.email "email@example.com"
-```		
-2. 检查自己电脑上是否有私钥和公钥，没有的话使用如下命令创建：
+```
+2. Check your computer for private and public keys. If not, use the following command to create:
 ``` bash
 $ ssh-keygen -t rsa -C "youremail@example.com"
 ```
-3. 将公钥内容拷贝到Github的SSH keys中;
-4. 在本地创建一个目录并进入，然后使用如下命令拉取代码：
+3. Copy the contents of the public key to Github's SSH keys;
+4. Create a directory locally and enter it, then use the following command to pull the code:
 ``` bash
-git clone git@github.com:xxx/xxx.git
+Git clone git@github.com:xxx/xxx.git
 ```
-> 注意：以上地址是你要拉取代码的仓库的地址
+> Note: The above address is the address of the repository where you want to pull the code
 
-5. 进入拉取好的仓库中，创建自己的分支，进行开发，将开发好的分支代码合并到测试分支(develop)或者主分支(master)上;
+5. After the pull is completed, enter the local github repository, create your own branch, develop, and merge the developed branch code into the test branch (develop) or the master branch (master);
