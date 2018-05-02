@@ -1,5 +1,5 @@
 # git-use
-[English Readme](https://github.com/lixilin123/git-use/tree/master)
+> [English Readme](https://github.com/lixilin123/git-use/tree/master)
 ### 1.简介
 本仓库介绍了使用git前需要做的一些事情
 ### 2.流程
