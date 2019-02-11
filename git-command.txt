@@ -1,0 +1,83 @@
+
+一、安装Git
+	
+	1.git config --global user.name 'xxx';
+	2.git config --global user.email 'xxx';
+	
+	
+二、创建仓库（本地）
+
+	1.git init;
+	
+	
+三、修改仓库（本地）
+
+	1.查看异同: git diff;
+	
+	2.查看提交日志: git log <--pretty=online>;
+	3.查看命令记录: git reflog;
+	4.版本回退: git reset --hard commit_id/HEAD^/HEAD^^/HEAD~100;
+	
+	5.查看工作区和仓库最新版本的区别: git diff HEAD <--file>;
+	
+	6.撤销修改: 
+		1) 只改了工作区(修改或删除): git checkout ./--filename;
+		2) 不但改了工作区,还添加到了暂存区: git reset HEAD <file>; 回到1)
+		3) 已经提交修改到仓库: 版本回退
+		
+	7.删除文件:
+		1) 手动删除/rm file;
+		2) git add file / git rm file;
+		3) git commit -m "remove file";
+		
+		
+四、远程仓库
+
+	1.创建SSH Key: ssh-keygen -t rsa -C "1826392514@qq.com";
+	
+	2.本地关联远程空仓库: git remote add origin git@github.com:lixilin111/xxx;
+	  推送(第一次会有-u): git push origin master <-u>;
+	  
+    3.克隆远程仓库: git clone xxx;
+
+
+五、分支管理
+
+	1.禁止Fast Forward: --no-ff;
+	
+	2.查看分支合并图: git log --graph;
+	
+	2.存储工作现场: git stash;
+	3.恢复工作现场: git stash pop (相当于 git stash apply && git stash drop);
+	
+	4.删除未合并过的分支: git branch -D <name> ;
+	
+	5.查看远程仓库信息: git remote -v;
+	6.建立本地分支与远程分支的关联: git branch --set-upstream branch-name origin/branch-name;
+	
+	7.rebase
+		1) 不要在公共分支上使用;
+		2) 优点: 可以净化分支树;
+		3) 缺点: 出项冲突时, 会多次比对;
+	
+六、标签管理
+
+	1.创建标签: git tag <tagName>;
+				git tag -a <tagName> -m "balabalabala...";
+	2.查看标签: git tag;
+				git show tag;
+				
+	3.推送标签: git push origin <tagName>;
+				git push origin --tags;
+				
+	4.删除标签: git tab -d <tagName>;
+				git push origin :refs/tags/<tagName>;
+				
+七、配置别名
+	
+	1.git config --global alias.st status;
+	2.git config --global alias.co checkout;
+	3.git config --global alias.ci commit;
+	4.git config --global alias.br branch;
+	
+	
