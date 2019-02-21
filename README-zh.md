@@ -1,7 +1,7 @@
 # git-use
 > [English Readme](https://github.com/lixilin123/git-use/tree/master)
 ### 1.简介
-本仓库介绍了使用git前需要做的一些事情
+本仓库介绍了使用git前需要做的一些事情,以及常用的git命令
 ### 2.流程
 1. 下载好git，安装好，并进行如下配置：
 ``` bash
