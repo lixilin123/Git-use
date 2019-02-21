@@ -1,4 +1,4 @@
-# git-use
+# git-guide
 > [English Readme](https://github.com/lixilin123/git-use/tree/master)
 ### 1.简介
 本仓库介绍了使用git前需要做的一些事情，以及[常用的git命令](https://github.com/lixilin123/git-use/blob/master/git-command.txt)
