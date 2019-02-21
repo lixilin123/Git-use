@@ -1,4 +1,4 @@
-# git-use
+# git-guide
 > [中文文档](https://github.com/lixilin123/git-use/blob/master/README-zh.md)
 ### 1 Introduction
 This is a github repository that describes some of the things you need to do before using git.
